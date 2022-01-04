@@ -34,6 +34,7 @@ h1{
 .calculator{
     display: flex;
     flex-direction: column;
+    font-family: monospace;
 }
 @media (min-width: 480px){
     .calculator{
@@ -50,6 +51,14 @@ h1{
     color: var(--color5);
     text-align: right;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    Word-wrap: break-Word;      /* IE */
 }
 @media (min-width: 480px){
     .display{
@@ -60,9 +69,15 @@ h1{
 }
 .previous-line{
     font-size: 4rem;
+    min-height: 40%;
+    max-width: 100%;
+    font-weight: 300;
 }
 .current-line{
     font-size: 6rem;
+    min-height: 60%;
+    max-width: 100%;
+    
 }
 @media (min-width: 480px){
     .previous-line{
